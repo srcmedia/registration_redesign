@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+
+        <div class="form-contents">
+            <div class="progress-line"></div>
+            <ul class="progress">
+                <li class="done">Your<br> Information
+                    <div class="progress-circle">
+                        <i class="fa fa-check"></i>
+                    </div>
+                </li>
+                <li class="done">Newsletter<br> Selection
+                    <div class="progress-circle">
+                        <i class="fa fa-check"></i>
+                    </div>
+                </li>
+                <li class="current">Free&nbsp;<br>Subscription&nbsp;Offer
+                    <div class="progress-circle">
+                        3
+                    </div>
+                </li>
+            </ul>
+
+            <h1>CLAIM YOUR FREE SUBSCRIPTION</h1>
+            <p class="subtext">Already a subscriber? <a href="#">Sign In</a></p>
+
+            <form>
+                <ul class="options">
+                    <li>
+                        <input type="radio" name="claim" id="digital">Yes, I want my free digital subscription to Health Data Management Magazine
+                    </li>
+                    <li>
+                        <input type="radio" name="claim" id="print">Yes, I want my free print subscription to Health Data Management Magazine
+                    </li>
+                    <li><input type="radio" name="claim" id="nothanks">No Thanks</li>
+                </ul>
+
+                <ul class="first-step">
+                    <li>
+                        <label>*</label><input type="text" placeholder="Address 1" class="no-bkg" id="address1" required=""></li>
+                    <li><input type="text" placeholder="Address 2" class="no-bkg"></li>
+                   <li> <label>*</label><input type="text" placeholder="City" class="no-bkg" id="city" required></li>
+                <li><div class="full-width">
+                <div class="statecontainer"><label>*</label><select class="state" id="state" required="">
+                    <option default>State</option>
+                    </select></div>
+
+                    <div class="zipcontainer"><label>*</label><input type="number" placeholder="Zip Code" id="zipcode" required=""></div>
+
+                    </div></li>
+                </ul>
+
+                    <input type="submit" value="Finish My Signup">                    <a href="#" class="go-back">&lt; Previous Step</a>
+
+
+            </form>
+            <span class="undertext">Magazine only available to qualified users within the U.S.</span>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+       <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/polyfiller.js"></script>
+        <script src="js/classList.min.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            webshim.setOptions('basePath', 'js/shims/');
+            webshim.polyfill('forms');
+            webshim.setOptions({
+                forms: {
+                lazyCustomMessages: true
+                }
+            });
+        </script>
+    </body>
+</html>

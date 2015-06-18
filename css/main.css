@@ -1,0 +1,727 @@
+/*! HTML5 Boilerplate v5.2.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+    color: #000;
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Form Stylingg
+   ========================================================================== */
+    body{
+        background-color:#d2d2d2;
+    }
+    .form-contents{
+        width:640px;
+        background-color:#fff;
+        margin:0 auto 20px;
+        position: relative;
+        padding:0 0 20px;
+        border-radius:10px;
+        box-shadow: 0 0 5px #999;
+    }
+
+    .progress-line{
+        width:440px;
+        position:absolute;
+        border-top:1px solid #979797;
+        z-index:1;
+        top:93px;
+        left:80px;
+    }
+    .form-contents h1{
+        text-align: center;
+        text-transform: uppercase;
+        font-size:2em;
+        margin:0;
+    }
+
+    .form-contents p.subtext{
+        text-align: center;
+        color:#555;
+        font-size:14px;
+        margin-bottom:0;
+        margin:10px 0 40px;
+    }
+    ul.first-step{
+        margin:0;
+        padding:0;
+        list-style: none;
+        clear: both;
+    }
+
+    ul.first-step li{
+        margin:20px auto;
+        width:460px;
+        position:relative;
+    }
+    p.subtext a{
+        color:#555;
+        font-weight: bold;
+        text-decoration: none;
+        font-size:16px;
+    }
+
+    p.subtext a:hover, a.go-back:hover {
+        color:#848485;
+    }
+    .step-2-pad{
+        padding:0 50px;
+    }
+    .form-contents .half-width{
+        width:270px;
+        margin: 10px 0px 0px 0px;
+        float:left;
+        padding:0 0 0 10px;
+        min-height:124px;
+    }
+
+    .form-contents .half-width:last-of-type{
+        margin-bottom:30px;
+    }
+    .half-width h3{
+        font-size:.8em;
+        margin:15px 0 5px;
+
+    }
+
+    .ie8only{
+        display:none;
+        display:block\9;
+        font-size:12px;
+        color:#555;
+        margin:0 0 10px;
+        float: left;
+    }
+    input[type="text"], input[type="password"], input[type="email"], select{
+        border: 1px solid #d2d2d2;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+        /*margin:20px 0;*/
+        width:450px;
+        height:49px;
+        height:30px\9;
+        font-size:14px;
+        color:#000;
+        padding:0;
+        border-radius: 4px;
+        display: block;
+        text-indent: 80px;
+        text-indent:10px\9;
+        line-height:30px\9;
+        background-color:#fff;
+        display: block;
+    }
+
+    input[type="number"]{
+        border: 1px solid #d2d2d2;
+        -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+        margin:0 0 20px;
+        width:150px;
+        height:49px;
+        height:30px\9;
+        font-size:14px;
+        color:#999;
+        padding:0;
+        border-radius: 4px;
+        display: block;
+        text-indent: 10px;
+        background-color:#fff;
+        line-height:30px\9;
+        float:right;
+    }
+    input[type="submit"]{
+        border:none;
+    }
+    input:focus{
+        box-shadow:0 0 5px 2px #38A7F6;
+    }
+
+    form label{
+        color:#d2d2d2;
+        display: block;
+        position:absolute;
+        margin-right:3px;
+        left:-10px;
+        top:-5px;
+        font-size: 20px;
+
+    }
+    .half-width input[type="checkbox"]{
+        width:20px;
+        height:20px;
+        float:left;
+        margin:14px 7px 0 0px;
+        border:1px solid #000;
+         -webkit-appearance:none;
+        -moz-appearance:none;
+        appearance:none;
+    }
+
+    .half-width input[type="checkbox"]:checked{
+        background:url('../img/checkbox-checked.svg') #000 -1px 0;
+    }
+
+    .half-width ul{
+        margin:0;
+        padding:10px 0 0 16px;
+        /*list-style: none;*/
+        float: left;
+        clear:left;
+
+    }
+
+    .half-width ul li{
+        font-size:14px;
+        padding:0;
+    }
+
+
+    .full-width{
+        width:450px;
+        display: block;
+        margin:0 auto;
+    }
+
+    select{
+        text-indent:10px;
+        background: url('../img/arrowdown.svg') top right no-repeat;
+        line-height: normal;
+        height:20px\9;
+        color:#999;
+
+    }
+    ul.progress{
+        margin:0 auto ;
+        padding:40px 0 40px;
+        z-index: 2;
+        position: relative;
+    }
+
+    ul.progress li{
+        display: inline-block;
+        text-decoration: none;
+        font-size:.8em;
+        text-align: center;
+        width:32%;
+        color:#979797;
+        z-index: 3;
+    }
+
+    ul.progress li br{
+        display:none;
+    }
+
+    ul.progress li .progress-circle{
+        border-radius:28px;
+        height:51px;
+        width:51px;
+        border:1px solid #979797;
+        font-size:2em;
+        line-height:51px;
+        margin:10px auto 0;
+        color:#979797;
+        z-index: 3;
+        background-color:#fff;
+
+    }
+    ul.progress li.current{
+        color:#000;
+    }
+    ul.progress li.current .progress-circle{
+        color:#fff;
+        border-color:#000;
+        background-color:#000;
+    }
+
+    ul.progress .done .progress-circle{
+        background-color:#999;
+        border-color:#999;
+        font-family:'Font-Awesome';
+        color:#fff;
+        z-index: 3;
+    }
+
+    input[type="text"]{
+        background: url('../img/name-bkg.svg') top left no-repeat;
+    }
+    input[type="email"]{
+        background: url('../img/email-bkg.svg') top left no-repeat;
+    }
+    input[type="password"]{
+        background: url('../img/password-bkg.svg') top left no-repeat;
+    }
+
+    button, input[type="submit"]{
+        color:#fff;
+        background: #AF1C24;
+        border-radius:8px;
+        text-transform:uppercase;
+        width:200px;
+        height:40px;
+        margin:10px auto 30px;
+        text-indent: 0;
+        display:block;
+        font-weight: bolder;
+    }
+
+    input[type="submit"]:hover{
+        background-color:#9A151C;
+    }
+    ul.options{
+        padding:0;
+        display:block;
+    }
+    ul.options li{
+        text-decoration: none;
+        display:block;
+        width:520px;
+        color:#555;
+        font-size:14px;
+        margin:10px auto;
+        height:28px;
+    }
+
+    ul.options li input[type="radio"]{
+        margin:3px 10px 20px;
+        float: left;
+        clear:left;
+        background-color:#000;
+    }
+
+    .state{
+        width:80%;
+        float:left;
+        margin: 0;
+    }
+
+    .statecontainer{
+        margin-left:-5px;
+        position: relative;
+        float:left;
+        width:50%;
+    }
+    .zipcontainer{
+        position:relative;
+        float:left;
+        width:50%;
+    }
+    form .zipcontainer label{
+        right: 150px;
+        left:inherit;
+    }
+    input.no-bkg{
+        background:#fff;
+        text-indent: 10px;
+    }
+
+    a.go-back{
+        text-decoration:none;
+        float:left;
+        font-weight: bold;
+        font-size:12px;
+        margin-top: -60px;
+        margin-left: 80px;
+        color:#555;
+        }
+    a.go-back:visited{
+        color:#555;
+    }
+
+    a.go-back:hover{
+        text-decoration: hover;
+    }
+
+    span.undertext{
+        color:#555;
+        font-size:12px;
+        position: absolute;
+        bottom:-24px;
+    }
+    p.requirements{
+        color:#999;
+        font-size: 12px;
+        margin:10px 0 30px;
+
+    }
+
+
+    h3.finished{
+        text-align: center;
+    }
+/*  ==========================================================================
+    MOBILE CSS
+    ==========================================================================
+*/
+
+@media screen and (max-width: 480px){
+
+    .form-contents{
+        width:100%;
+        padding:10px;
+    }
+
+    .form-contents h1{
+        line-height:1.2em;
+    }
+
+    input[type="text"],input[type="password"],input[type="email"],select{
+        width:100%;
+    }
+        ul.first-step li{
+        width:100%;
+        }
+
+    ul.progress li br{
+        display:block;
+    }
+
+    .form-contents .half-width, .full-width{
+        width:100%;
+        margin:0;
+        padding: 0;
+    }
+
+    .form-contents .half-width:last-of-type{
+        margin-bottom:0;
+    }
+
+    .form-contents .half-width h3{
+        font-size:18px;
+        margin-bottom:0;
+    }
+    .form-contents .half-width ul{
+        padding:0 0 20px 34px;
+    }
+    .form-contents .half-width li{
+        font-size:16px;
+    }
+
+    .form-contents .half-width input[type="checkbox"]{
+        margin: 17px 10px 15px;
+    }
+
+    ul.options li{
+        font-size:16px;
+        width:100%;
+        margin:20px auto;
+        clear:both;
+        float:left;
+    }
+     ul.options li input{
+        margin-bottom:40px;
+    }
+    .progress-line{
+        top:122px;
+        left:70px;
+        width:65%;
+    }
+    a.go-back{
+        margin:0 auto 20px;
+        float:none;
+        text-align: center;
+        width:100%;
+        display:block;
+    }
+    span.undertext{
+        position: relative;
+        margin:0 auto;
+        bottom:0;
+        font-size:12px;
+        width:100%;
+        text-align: center;
+        display: block;
+    }
+    .state{
+        margin:0 15px 0 -1px;
+    }
+    .statecontainer{
+        margin:0;
+    }
+
+    .step-2-pad{
+        padding:0;
+    }
+
+
+}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
+
+
+/**************************************************
+IPHONE FIX
+**************************************************/
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+    select:focus,
+    textarea:focus,
+    input:focus {
+        font-size: 16px;
+    }
+}
